@@ -4,11 +4,11 @@ Look no further, because [examplesites](https://github.com/Garlicvideos/examples
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See Installing for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See Installing (Coming soon) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-You will require a server of any flavour such as [Apache](https://www.apache.org/)/[Nginx](https://www.nginx.com/) for the outside world to interact and view the website.
+You will require a webserver of any flavour such as [Apache](https://www.apache.org/)/[Nginx](https://www.nginx.com/) for the outside world to interact and view the website.
 
 ## Contributing
 
