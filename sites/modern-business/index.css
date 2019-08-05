@@ -1,0 +1,140 @@
+/*#body-image-1 {
+	background-image: url(./assets/server-room.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	background-size: 100%;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+a {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+.nav-bg {
+	background-color: rgba(0, 0, 0, 1);
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#video-container > video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+  	z-index: -3;
+}
+
+#video-container > div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+    align-items: center;
+}
+
+#video-container > div > div {
+	text-align: center;
+	margin: auto;
+}
+
+#video-container > div > div > a {
+	color: white;
+	font-size: 2em;
+}
+
+#gradient-overlay {
+  background-image: linear-gradient(to bottom, rgba(11, 39, 65, 0), rgba(0, 0, 0, 1));
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#about-container {
+	padding-top: 5%;
+	background-color: black;
+	width: 100%;
+}
+
+#about-container a {
+	color: white;
+}
+
+#about-container > div {
+	text-align: center;
+}
+
+#about-header > a {
+	font-size: 1.5em;
+}
+
+#about-desc {
+	padding-top: 1%;
+	width: 80%;
+	margin: auto;
+}
+
+#images-wrapper {
+	padding-top: 6%;
+	width: 100%;
+}
+
+.card-container > div {
+	width: 100%;
+	height: 50%;
+	display: block;
+}
+
+.card {
+	opacity: 0;
+	margin-top: 50px;	
+	width: 40%;
+}
+
+#card-2 {
+	margin-bottom: 15%;
+}
+
+.top-spacing {
+	margin-top: 20%;
+}
+
+#card-2-container {
+	width: 100%;
+	height: 70%;
+}
+
+/* For mobile devices */
+
+@media only screen and (max-width: 768px) {
+	nav {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	#images-wrapper {
+		padding-top: 10%;
+	}
+
+	.card-row {
+		display: inline;
+	}
+
+	.about-image {
+		width: 100%;
+	}
+
+	.card {
+		width: 100%;
+		padding-top: 10%;
+	}
+
+	.left-spacing {
+		margin-left: 0%;
+	}
+}
