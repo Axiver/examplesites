@@ -23,7 +23,6 @@
 
 				if ($('#card-3').visible(true)) {
 					$('#card-3').animate({'margin-top': '15%', opacity: '1'}, 500);
-					$(window).off('scroll');
 				}
 			});
 
@@ -51,10 +50,10 @@
 		        		<a class="nav-link" href="#">Home</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">About</a>
+		        		<a class="nav-link" href="#about-container">About</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">Contact Us</a>
+		        		<a class="nav-link" href="#contact-us-container">Contact Us</a>
 		      		</li>
 		    	</ul>
 		  	</div>
@@ -110,6 +109,13 @@
 					<div id="contact-us-container">
 						<div id="contact-us-header">
 							<a style="font-size: 1.5em;">Contact Us</a>
+						</div>
+						<div id="contact-us-body">
+							<div id="contact-info">
+								<a>Our number: +65 61234567</a><br>
+								<a>We are located at: 23 ExampleStreet, Singapore, Singapore, 812345</a><br>
+								<a>Our email: SchruteOffices@example.com</a>
+							</div>
 						</div>
 					</div>
 				</div>
