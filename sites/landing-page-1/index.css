@@ -150,4 +150,12 @@ body {
 	#card-2-container {
 		height: 50%;
 	}
+
+	#contact-us-container {
+		margin-top: 20%;
+	}
+
+	#contact-us-body a {
+		padding-top: 50%;
+	}
 }
