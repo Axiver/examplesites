@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>Garlicvideos' Example Sites</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Load jQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+			a {
+				font-family: 'Lexend Deca', sans-serif;
+			}
+
+			body {
+				background-image: linear-gradient(320deg, #00d9c7, #00bf0a);
+			}
+
+			#container {
+				width: 80%;
+				margin: auto;
+				padding-top: 3%;
+			}
+
+			#header, #byline {
+				text-align: center;
+			}
+
+			#header {
+				font-size: 2.5em;
+			}
+
+			#creator {
+				text-decoration: none;
+				color: #8c3003;
+			}
+
+			#sites {
+				text-align: center;
+				padding-top: 10%;
+			}
+
+			#landing-page-1, #landing-page-2 {
+				padding-top: 1%;
+				border-style: solid;
+				border-width: 1px;
+				border-color: black;
+				border-radius: 5px;
+				font-size: 1.5em;
+				padding-bottom: 2%;
+			}
+
+			#landing-1-img-container, #landing-2-img-container {
+				width: 100%;
+				padding-top: 2%;
+				padding-bottom: 0.5%;
+			}
+
+			#landing-1-img-1 {
+				background-image: url("./assets/site-1-1.png");
+			}
+
+			#landing-1-img-2 {
+				background-image: url("./assets/site-1-2.png");
+			}
+
+			#landing-2-img-1 {
+				background-image: url("./assets/site-2-1.png");
+			}
+
+			.landing-image {
+				padding-top: 5%;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-position: center center;
+				height: 40%;
+				width: 40%;
+				transition: all 0.2s ease-in-out;
+				display: inline-block;
+				position: relative;
+			}
+
+			.landing-image:hover {
+				transform: translateY(-10%);
+			}
+
+			.new-section {
+				margin-top: 2%;
+			}
+
+			.site-link {
+				text-decoration: none;
+			}
+
+			@media only screen and (max-width: 768px) {
+				#container {
+					width: 100%;
+				}
+
+				.landing-image {
+					display: block;
+					width: 90%;
+					height: 25%;
+					margin: auto;
+					transition: all 0s;
+				}
+
+				.landing-image:hover {
+					transform: translateY(0%);
+				}
+			}
+
+		</style>
+		<script>
+
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div>
+				<div id="header">
+					<a>Example Sites</a>
+				</div>
+				<div id="byline">
+					<a>By: </a><a id="creator" href="https://github.com/Garlicvideos/">Garlicvideos</a>
+				</div>
+			</div>
+			<div id="sites">
+				<div id="landing-page-1">
+					<div id="landing-1-header">
+						<a>Landing page — 1 </a>
+					</div>
+					<div id="landing-1-img-container">
+						<div id="landing-1-img-1" class="landing-image"></div>
+						<div id="landing-1-img-2" class="landing-image"></div>
+					</div>
+					<a class="site-link" id="goto-1" href="../sites/landing-page-1/index.html">Go to working site</a>
+				</div>
+				<div id="landing-page-2" class="new-section">
+					<div id="landing-2-header">
+						<a>Landing page — 2 </a>
+					</div>
+					<div id="landing-2-img-container">
+						<div id="landing-2-img-1" class="landing-image"></div>
+					</div>
+					<a class="site-link" id="goto-2" href="../sites/landing-page-2/index.html">Go to work-in-progress site</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
