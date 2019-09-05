@@ -9,9 +9,16 @@
 		<!-- Load jQuery -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		<script src="https://rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
 		<!-- Load our JS -->
 		<script>
-			
+			$('.scroll').on('click', function(e) {
+				e.preventDefault();
+				var target = $(this).attr('href');
+				var offset = 0;
+				if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+				$.scrollTo(target, 300, { offset: -offset });
+			});
 		</script>
 	</head>
 	<body>
@@ -30,10 +37,10 @@
 		        		<a class="nav-link" href="#">Home</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#about-container">About</a>
+		        		<a class="nav-link">Features</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#contact-us-container">Contact Us</a>
+		        		<a class="nav-link" id="downloads-btn">Downloads</a>
 		      		</li>
 		    	</ul>
 		  	</div>
@@ -49,7 +56,29 @@
 		</div>
 		<div id="content-border"></div>
 		<div id="about">
-
+			<div id="card-container">
+				<div id="card-fast" class="card">
+				  	<img class="card-img-top" src="./assets/fast.svg">
+				  	<div class="card-body">
+				    	<h5 class="card-title">Fast</h5>
+				    	<h6 class="card-subtitle mb-2">Our servers are dedicated to your ears</h6>
+				  	</div>
+				</div>
+				<div id="card-limitless" class="card">
+				  	<img class="card-img-top" src="./assets/limitless.svg">
+				  	<div class="card-body">
+				    	<h5 class="card-title">Limitless</h5>
+				    	<h6 class="card-subtitle mb-2">Our collection of music is basically limitless</h6>
+				  	</div>
+				</div>
+				<div id="card-anywhere" class="card">
+				  	<img class="card-img-top" src="./assets/anywhere.svg">
+				  	<div class="card-body">
+				    	<h5 class="card-title">Anywhere</h5>
+				    	<h6 class="card-subtitle mb-2">Listen anytime you want, anywhere you want</h6>
+				  	</div>
+				</div>
+			</div>
 		</div>
 		<!-- Load bootstrap JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
