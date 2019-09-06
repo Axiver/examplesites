@@ -24,6 +24,7 @@ a {
 	height: 0.5%;
 	width: 100%;
 	background-image: linear-gradient(to left, #2100f7, #4a00f7);
+	border-radius: 0.5em;
 }
 
 #image-container {
@@ -37,7 +38,6 @@ a {
 	width: 100%;
 	z-index: -2;
 }
-
 
 #woman-img {
 	position: relative;
@@ -99,6 +99,49 @@ a {
 	margin-left: 1.2%;
 }
 
+#download {
+	margin-top: 20%;
+}
+
+#download-header-wrap {
+	padding-bottom: 0.2%;
+	width: 20%;
+	margin: auto;
+	margin-bottom: 3%;
+	border-radius: 2%;
+}
+
+#download-header {
+	font-size: 1.8em;
+	text-align: center;
+	margin-bottom: 0.5%;
+	color: white;
+}
+
+#download-container {
+	width: 40%;
+	margin: auto;
+	display: flex;
+	margin-bottom: 3%;
+}
+
+#download-container > div {
+	flex: 1;
+	margin: auto;
+	text-align: center;
+}
+
+#download-container > div > button {
+	padding: 2%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+#download-container > div > button > img {
+	width: 60%;
+}
+
 @media only screen and (max-width: 768px) {
 	#image-container {
 		text-align: center;
@@ -139,5 +182,13 @@ a {
 	#card-limitless, #card-anywhere {
 		margin-left: 0%;
 		margin-top: 10%;
+	}
+
+	#download-container {
+		width: 90%;
+	}
+
+	#download-header-wrap {
+		width: 80%;
 	}
 }
