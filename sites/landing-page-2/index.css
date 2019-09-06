@@ -3,6 +3,9 @@
 
 body {
 	background-image: linear-gradient(320deg, #03abff, #44118c);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
 }
 
 nav {
@@ -21,6 +24,7 @@ a {
 	height: 0.5%;
 	width: 100%;
 	background-image: linear-gradient(to left, #2100f7, #4a00f7);
+	border-radius: 0.5em;
 }
 
 #image-container {
@@ -34,7 +38,6 @@ a {
 	width: 100%;
 	z-index: -2;
 }
-
 
 #woman-img {
 	position: relative;
@@ -60,64 +63,83 @@ a {
 }
 
 #about {
-	height: 20%;
 	width: 100%;
 }
 
-.draw:before {
-	content: '';
-	position: absolute;
-	width: 0px;
-	height: 0px;
-	background: transparent;
-	border: 2px solid transparent;
+#card-container {
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	width: 60%;
+	display: flex;
 }
 
-.draw:hover:before {
-	animation: draw 1s linear forwards;
+.card {
+	width: 32%;
+	background-image: linear-gradient(320deg, rgba(14, 107, 194, 0.9), rgba(7, 129, 242, 0.9));
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	border-radius: 10px !important;
+	margin: auto;
+	flex: 1;
 }
 
-@keyframes draw {
-	0% {
-		width: 0px;
-		height: 0px;
-		border-top-color: transparent;
-		border-right-color: transparent;
-		border-bottom-color: transparent;
-		border-left-color: #4a00f7;
-	}
-	25% { 
-		width: 100%;
-		height: 0px;
-		border-top-color: transparent;
-		border-right-color: transparent;
-		border-bottom-color: #4a00f7;
-		border-left-color: #4a00f7;
-	}
-	50% { 
-		width: 100%;
-		height: 100%;
-		border-top-color: #4a00f7;
-		border-right-color: transparent;
-		border-bottom-color: transparent;
-		border-left-color: transparent;
-	}
-	75% { 
-		width: 100%;
-		height: 100%;
-		border-top-color: #4a00f7;
-		border-right-color: #4a00f7;
-		border-bottom-color: transparent;
-		border-left-color: transparent; 
-	}
-	100% { 
-		width: 100%;
-		height: 100%;
-		border-top-color: #4a00f7;
-		border-right-color: #4a00f7;
-		border-bottom-color: transparent;
-		border-left-color: transparent;
-	}
+.card h5 {
+	font-size: 2em;
+}
+
+.card > img {
+	width: 50%;
+	margin: auto;
+	padding-top: 8%;
+}
+
+#card-limitless, #card-anywhere {
+	margin-left: 1.2%;
+}
+
+#download {
+	margin-top: 20%;
+}
+
+#download-header-wrap {
+	padding-bottom: 0.2%;
+	width: 20%;
+	margin: auto;
+	margin-bottom: 3%;
+	border-radius: 2%;
+}
+
+#download-header {
+	font-size: 1.8em;
+	text-align: center;
+	margin-bottom: 0.5%;
+	color: white;
+}
+
+#download-container {
+	width: 40%;
+	margin: auto;
+	display: flex;
+	margin-bottom: 3%;
+}
+
+#download-container > div {
+	flex: 1;
+	margin: auto;
+	text-align: center;
+}
+
+#download-container > div > button {
+	padding: 2%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+#download-container > div > button > img {
+	width: 60%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -141,5 +163,32 @@ a {
 
 	#woman-img {
 		display: none;
+	}
+
+	#content-border {
+		display: none;
+	}
+
+	.card {
+		width: 100%;
+		flex: 0;
+	}
+
+	#card-container {
+		display: block;
+		width: 80%;
+	}
+
+	#card-limitless, #card-anywhere {
+		margin-left: 0%;
+		margin-top: 10%;
+	}
+
+	#download-container {
+		width: 90%;
+	}
+
+	#download-header-wrap {
+		width: 80%;
 	}
 }
