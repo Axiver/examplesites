@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+a, h5, p {
+	font-family: 'Varela Round', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url(./assets/banner.jpg);
+	background-repeat: no-repeat;
+}
+
+nav {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#banner {
+	font-size: 2.5em;
+	text-align: center;
+	width: 100%;
+	height: 30%;
+	margin: auto;
+	display: table;
+}
+
+#banner > a {
+	display: table-cell;
+	vertical-align: middle;
+	color: black;
+}
+
+#selection-wrap {
+	width: 100%;
+	min-height: 20%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+.selection-row {
+	display: flex;
+	width: 60%;
+	margin: auto;
+}
+
+.card-wrap {
+	flex: 1;
+	border-radius: 5px;
+	padding: 0.2%;
+	background: linear-gradient(-45deg, rgb(50, 168, 168), rgb(158, 50, 168));
+}
+
+.card:hover {
+	background-color: rgb(161, 161, 161);
+}
+
+.card {
+	text-align: center;
+	transition: 0.15s all ease-in-out 0s;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.card:hover {
+	cursor: pointer;
+}
+
+.card > img {
+	width: 50%;
+	margin: auto;
+	padding: 1%;
+}
+
+.card-body > a {
+	color: white !important;
+}
+
+.card-text {
+	width: 100%;
+	text-align: left;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+.tick-row {
+	margin: auto;
+	display: flex;
+}
+
+.tick-row > div {
+	flex: 1;
+}
+
+.tick-row > div > img {
+	height: 1em;
+}
+
+.tick-row > div:nth-child(2) {
+	float: right;
+	margin-left: 5%;
+}
+
+.selection-row:nth-child(2) {
+	margin-top: 2%;
+}
+
+.mg-left-card {
+	margin-left: 5%;
+}
