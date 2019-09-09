@@ -5,21 +5,32 @@
 		<link rel="stylesheet" type="text/css" href="./index.css">
 		<!-- Load bootstrap stylesheet -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Load jQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<nav class="navbar sticky-top navbar-expand-lg navbar-light">
 		  	<a class="navbar-brand" href="#">The Future of Server Hosting</a>
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		  	</button>
-		  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    	<div class="navbar-nav ml-auto">
-		      		<a class="nav-item nav-link" href="#">Home</a>
-		      		<a class="nav-item nav-link" href="#">Features</a>
-		      		<a class="nav-item nav-link active" href="#">Pricing</a>
-		      		<a class="nav-item nav-link" href="#">FAQ</a>
-		    	</div>
+		  	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		    	<ul class="navbar-nav ml-auto">
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="#">Home</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="#about">Features</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link active" id="downloads-btn" href="#download">Pricing</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" id="downloads-btn" href="#download">FAQ</a>
+		      		</li>
+		    	</ul>
 		  	</div>
 		</nav>
 		<div id="banner-wrap">
