@@ -1,6 +1,6 @@
 # examplesites
 Do you need a quick and easy way to grab a pre-made website, modifying it for your own needs?
-Look no further, because [examplesites](https://github.com/Garlicvideos/examplesites) is for you.
+Look no further, because [examplesites](https://github.com/Axiver/examplesites) is for you.
 
 ## Getting Started
 
@@ -16,9 +16,9 @@ Please read [CONTRIBUTING.md](Contributing.md) for details on our code of conduc
 
 ## Authors
 
-* **Garlicvideos** - [Garlicvideos](https://github.com/Garlicvideos)
+* **Axiver** - [Axiver](https://github.com/Axiver)
 
-See also the list of [contributors](https://github.com/Garlicvideos/examplesites/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Axiver/examplesites/contributors) who participated in this project.
 
 ## License
 
@@ -26,4 +26,4 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE
 
 ## If you like what I do, please consider keeping me alive
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://paypal.me/Garlicvideos)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://paypal.me/XavierTeoZK)
